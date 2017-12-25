@@ -14,6 +14,7 @@
 		E26D45F11FF1A78000E1FD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D45EF1FF1A78000E1FD92 /* LaunchScreen.storyboard */; };
 		E26D45FC1FF1A78100E1FD92 /* LottieExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D45FB1FF1A78100E1FD92 /* LottieExampleTests.swift */; };
 		E26D46071FF1A78100E1FD92 /* LottieExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D46061FF1A78100E1FD92 /* LottieExampleUITests.swift */; };
+		E26D46151FF1A7E600E1FD92 /* ViewRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D46141FF1A7E600E1FD92 /* ViewRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E26D46021FF1A78100E1FD92 /* LottieExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottieExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D46061FF1A78100E1FD92 /* LottieExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieExampleUITests.swift; sourceTree = "<group>"; };
 		E26D46081FF1A78100E1FD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26D46141FF1A7E600E1FD92 /* ViewRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E26D45ED1FF1A78000E1FD92 /* Assets.xcassets */,
 				E26D45EF1FF1A78000E1FD92 /* LaunchScreen.storyboard */,
 				E26D45F21FF1A78000E1FD92 /* Info.plist */,
+				E26D46141FF1A7E600E1FD92 /* ViewRecorder.swift */,
 			);
 			path = LottieExample;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				E26D45E91FF1A78000E1FD92 /* ViewController.swift in Sources */,
 				E26D45E71FF1A78000E1FD92 /* AppDelegate.swift in Sources */,
+				E26D46151FF1A7E600E1FD92 /* ViewRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
