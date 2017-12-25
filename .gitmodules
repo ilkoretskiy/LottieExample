@@ -1,0 +1,3 @@
+[submodule "externals/lottie-ios"]
+	path = externals/lottie-ios
+	url = https://github.com/ilkoretskiy/lottie-ios.git

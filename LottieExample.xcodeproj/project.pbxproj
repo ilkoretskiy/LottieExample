@@ -15,6 +15,10 @@
 		E26D45FC1FF1A78100E1FD92 /* LottieExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D45FB1FF1A78100E1FD92 /* LottieExampleTests.swift */; };
 		E26D46071FF1A78100E1FD92 /* LottieExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D46061FF1A78100E1FD92 /* LottieExampleUITests.swift */; };
 		E26D46151FF1A7E600E1FD92 /* ViewRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D46141FF1A7E600E1FD92 /* ViewRecorder.swift */; };
+		E26D46231FF1B88C00E1FD92 /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E26D46211FF1B88100E1FD92 /* libLottie.a */; };
+		E26D46251FF1B89200E1FD92 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26D46241FF1B89200E1FD92 /* AVFoundation.framework */; };
+		E26D46271FF1B89600E1FD92 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26D46261FF1B89600E1FD92 /* AVKit.framework */; };
+		E26D462C1FF1BB0500E1FD92 /* ver1.json in Resources */ = {isa = PBXBuildFile; fileRef = E26D462B1FF1BB0500E1FD92 /* ver1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = E26D45E21FF1A77F00E1FD92;
 			remoteInfo = LottieExample;
+		};
+		E26D461C1FF1B88100E1FD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62CA59B81E3C173B002D7188;
+			remoteInfo = Lottie_iOS;
+		};
+		E26D461E1FF1B88100E1FD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAE1F7E61E428CBE002E0974;
+			remoteInfo = Lottie_macOS;
+		};
+		E26D46201FF1B88100E1FD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84FE12EF1E4C1485009B157C;
+			remoteInfo = LottieLibraryIOS;
+		};
+		E26D46281FF1B8B100E1FD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FE12EE1E4C1485009B157C;
+			remoteInfo = LottieLibraryIOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +81,10 @@
 		E26D46061FF1A78100E1FD92 /* LottieExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieExampleUITests.swift; sourceTree = "<group>"; };
 		E26D46081FF1A78100E1FD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26D46141FF1A7E600E1FD92 /* ViewRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecorder.swift; sourceTree = "<group>"; };
+		E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "externals/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
+		E26D46241FF1B89200E1FD92 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E26D46261FF1B89600E1FD92 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E26D462B1FF1BB0500E1FD92 /* ver1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ver1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26D46231FF1B88C00E1FD92 /* libLottie.a in Frameworks */,
+				E26D46271FF1B89600E1FD92 /* AVKit.framework in Frameworks */,
+				E26D46251FF1B89200E1FD92 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +118,12 @@
 		E26D45DA1FF1A77F00E1FD92 = {
 			isa = PBXGroup;
 			children = (
+				E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */,
 				E26D45E51FF1A78000E1FD92 /* LottieExample */,
 				E26D45FA1FF1A78000E1FD92 /* LottieExampleTests */,
 				E26D46051FF1A78100E1FD92 /* LottieExampleUITests */,
 				E26D45E41FF1A78000E1FD92 /* Products */,
+				E26D46221FF1B88C00E1FD92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +140,7 @@
 		E26D45E51FF1A78000E1FD92 /* LottieExample */ = {
 			isa = PBXGroup;
 			children = (
+				E26D462B1FF1BB0500E1FD92 /* ver1.json */,
 				E26D45E61FF1A78000E1FD92 /* AppDelegate.swift */,
 				E26D45E81FF1A78000E1FD92 /* ViewController.swift */,
 				E26D45EA1FF1A78000E1FD92 /* Main.storyboard */,
@@ -128,6 +170,25 @@
 			path = LottieExampleUITests;
 			sourceTree = "<group>";
 		};
+		E26D46171FF1B87F00E1FD92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26D461D1FF1B88100E1FD92 /* Lottie.framework */,
+				E26D461F1FF1B88100E1FD92 /* Lottie.framework */,
+				E26D46211FF1B88100E1FD92 /* libLottie.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26D46221FF1B88C00E1FD92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E26D46261FF1B89600E1FD92 /* AVKit.framework */,
+				E26D46241FF1B89200E1FD92 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E26D46291FF1B8B100E1FD92 /* PBXTargetDependency */,
 			);
 			name = LottieExample;
 			productName = LottieExample;
@@ -221,6 +283,12 @@
 			mainGroup = E26D45DA1FF1A77F00E1FD92;
 			productRefGroup = E26D45E41FF1A78000E1FD92 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E26D46171FF1B87F00E1FD92 /* Products */;
+					ProjectRef = E26D46161FF1B87F00E1FD92 /* Lottie.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E26D45E21FF1A77F00E1FD92 /* LottieExample */,
@@ -230,6 +298,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		E26D461D1FF1B88100E1FD92 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = E26D461C1FF1B88100E1FD92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26D461F1FF1B88100E1FD92 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = E26D461E1FF1B88100E1FD92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26D46211FF1B88100E1FD92 /* libLottie.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLottie.a;
+			remoteRef = E26D46201FF1B88100E1FD92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		E26D45E11FF1A77F00E1FD92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -238,6 +330,7 @@
 				E26D45F11FF1A78000E1FD92 /* LaunchScreen.storyboard in Resources */,
 				E26D45EE1FF1A78000E1FD92 /* Assets.xcassets in Resources */,
 				E26D45EC1FF1A78000E1FD92 /* Main.storyboard in Resources */,
+				E26D462C1FF1BB0500E1FD92 /* ver1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = E26D45E21FF1A77F00E1FD92 /* LottieExample */;
 			targetProxy = E26D46031FF1A78100E1FD92 /* PBXContainerItemProxy */;
+		};
+		E26D46291FF1B8B100E1FD92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LottieLibraryIOS;
+			targetProxy = E26D46281FF1B8B100E1FD92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +532,7 @@
 				DEVELOPMENT_TEAM = FHNA38J699;
 				INFOPLIST_FILE = LottieExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ikoretskiy.LottieExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -449,6 +548,7 @@
 				DEVELOPMENT_TEAM = FHNA38J699;
 				INFOPLIST_FILE = LottieExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ikoretskiy.LottieExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
